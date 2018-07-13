@@ -1,16 +1,8 @@
-# OpenWerewolf
+# OpenWerewolf : Games
 
-> A fully-featured online multiplayer werewolf game.
+> A collection of games that OpenWerewolf runs
 
 ## Play now at https://www.openwerewolf.com/
-
-## Features:
-* You can run multiple games at once using the lobby system.
-* The core engine is general. Use it to build and host whatever games you want.
-* The games are open source under AGPL-3.0.
-* The core engine and client are open source under Apache-2.0 so can be used commercially.
-* Includes spam and profanity filters.
-
 ## Screenshot:
 ![An image of the OpenWerewolf client](https://github.com/JamesCraster/OpenWerewolf/blob/master/Screenshot.png)
 
@@ -22,13 +14,6 @@ in the Trial, where you'll be voting to kill the werewolves among you. For 3-7 p
 * Classic: A classic game of werewolf lasting multiple nights. Featuring werewolves, doctors, cops and vigilantes.
 
 * Mafia execution, Mission games haven't been started yet: maybe you could help write them?
-## Install and run
-* Grab the latest [release](https://github.com/JamesCraster/OpenWerewolf/releases) (choose OpenWerewolf.zip).
-
-* [Install Node.js](https://nodejs.org/en/)  
-
-* Unzip OpenWerewolf.zip, and run: `node app.js`  
-
 
 ## Contribute:
 All contributors are welcome. Read the [guide.](https://github.com/JamesCraster/OpenWerewolf/wiki/Contributing)
