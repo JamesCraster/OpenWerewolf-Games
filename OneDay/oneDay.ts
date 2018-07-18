@@ -1,5 +1,5 @@
 /* 
-    Copyright (C) 2017 James V. Craster  
+    Copyright (C) 2017-2018 James V. Craster  
 
     This file is part of OpenWerewolf:OneDay.  
     OpenWerewolf:OneDay is free software: you can redistribute it and/or modify
@@ -1083,5 +1083,8 @@ export class OneDay extends Game {
       this.playerchat.receive(player, player.username + ": " + msg, undefined, undefined, player.color);
       this.endChat.receive(player, player.username + ": " + msg, undefined, undefined, player.color);
     }
+  }
+  public disconnect() {
+
   }
 }
