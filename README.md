@@ -1,6 +1,6 @@
 # OpenWerewolf : Games
 
-> A collection of games that OpenWerewolf runs
+> A collection of games that OpenWerewolf runs. Add them to OpenWerewolf-Core by pasting them in the /Games directory
 
 ## Play now at https://www.openwerewolf.com/
 ## Screenshot:
