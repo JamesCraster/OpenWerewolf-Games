@@ -4,7 +4,7 @@
 
 ## Play now at https://www.openwerewolf.com/
 ## Screenshot:
-![An image of the OpenWerewolf client](https://github.com/JamesCraster/OpenWerewolf/blob/master/Screenshot.png)
+![An image of the OpenWerewolf client](https://github.com/JamesCraster/OpenWerewolf-Core/blob/master/Screenshot.png)
 
 ## The Games:
 * OneDay: During the night, your cards are stolen, swapped, carefully inspected and drunkenly taken by accident.
