@@ -310,7 +310,7 @@ export class OneDay extends Game {
 
 
   private winResolution() {
-    var showWinWait = 6000;
+    let showWinWait = 6000;
     //if no players are around, stop here
     if (this.players.length == 0) {
       return;
@@ -369,9 +369,19 @@ export class OneDay extends Game {
         this.playerchat.broadcast(losers[i].username + " has been hanged.");
         this.headerBroadcast([{ text: losers[i].username, color: losers[i].color }, { text: ' has been hanged', color: Colors.white }]);
         setTimeout(() => {
-          this.playerchat.broadcast(losers[i].username + " was a " + losers[i].data.role + ".");
-          this.headerBroadcast([{ text: losers[i].username, color: losers[i].color }, { text: ' was a ', color: Colors.white },
-          { text: losers[i].data.role, color: Colors.white }]);
+          if (losers[i].data.role == Roles.jester) {
+            this.playerchat.broadcast(losers[i].username + " was a " + losers[i].data.role + ".");
+            this.headerBroadcast([{ text: losers[i].username, color: losers[i].color }, { text: ' was a ', color: Colors.white },
+            { text: losers[i].data.role, color: Colors.brightYellow }]);
+          } else if (losers[i].data.role == Roles.werewolf || losers[i].data.role == Roles.minion) {
+            this.playerchat.broadcast(losers[i].username + " was a " + losers[i].data.role + ".");
+            this.headerBroadcast([{ text: losers[i].username, color: losers[i].color }, { text: ' was a ', color: Colors.white },
+            { text: losers[i].data.role, color: Colors.brightRed }]);
+          } else {
+            this.playerchat.broadcast(losers[i].username + " was a " + losers[i].data.role + ".");
+            this.headerBroadcast([{ text: losers[i].username, color: losers[i].color }, { text: ' was a ', color: Colors.white },
+            { text: losers[i].data.role, color: Colors.brightGreen }]);
+          }
         }, 3000);
       }
       for (let i = 0; i < losers.length; i++) {
@@ -789,7 +799,7 @@ export class OneDay extends Game {
           );
           this.players[i].send("You look at two cards in the center.");
           let cardArray = ["left", "middle", "right"];
-          var combo = Utils.chooseCombination(cardArray, 2);
+          let combo = Utils.chooseCombination(cardArray, 2);
           if (combo.indexOf("left") != -1) {
             this.players[i].send(
               "You look at the left card. The left card is a " + this.leftCard + "."
